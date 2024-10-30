@@ -1,0 +1,98 @@
+*{ 
+    margin: 5;
+    padding: 5;
+    font-family: "Comfortaa", sans-serif;
+}
+
+
+body {
+    background-color: #ffecec;
+    
+} 
+
+h1, h2, h3 {
+    font-family: 'Lilita One', sans-serif;
+}
+
+h1 { 
+    text-align: center;
+    border:2px; 
+    padding: 100px;
+    margin: 100px 50px 50px 50px;
+    font-size: 80px;
+    line-height: 18px;
+    color: coral;
+    animation: moveInOut 5s infinite;
+   
+}
+
+@keyframes moveInOut {
+    0% {
+        transform: translateX(-100%); 
+    }
+    50% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(100%); /* Move off-screen right */
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px; 
+    line-height: 40px;
+    color: coral
+}
+
+
+
+h3 { 
+    text-align: center;
+    color: coral
+}
+
+.text-center {
+    text-align: center;     
+}
+
+div {
+    margin-left: 550px;
+    border: 2px;
+    width: 300px;
+    word-wrap: normal;
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+div { 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align:justify; 
+    color: coral
+}
+
+.center-image {
+    display: block;
+    margin: 20px auto; 
+    max-width: 100%;
+    height: auto; 
+    border: 2px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.center-image-container {
+    position: relative; 
+}
+
+.center-image-container:hover .center-image {
+    opacity: 1; 
+}
+
+.container {
+    margin: 20px auto; 
+    border: 2px solid; 
+    border-radius: 8px;
+    padding: 20px;
+} 

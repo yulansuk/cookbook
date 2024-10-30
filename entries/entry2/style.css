@@ -1,0 +1,51 @@
+*{ 
+    margin: 5;
+    padding: 5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body {
+    background-image: url(imgs/im\ mad.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffa38c
+    
+} 
+
+@font-face {
+    font-family: myFirstfont;
+    src: url(PPNeueWorld_SemiCondensedUltraBold.woff);
+}
+
+.container{ 
+    position: absolute; 
+    text-align: center;
+    color: white
+    }
+
+h1 { 
+    font-size: 50px;
+    color: #ff4a39
+} 
+
+h2 { 
+    color: #ff4a39
+}
+
+h3 { 
+    color: #ffffff
+
+}
+
+div { 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align:justify; 
+    color: #ffffffea
+}
+    
+img { 
+float: left
+}
+
+
