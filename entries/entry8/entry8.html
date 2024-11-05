@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slideshow Gallery</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.typekit.net/wfl2zaz.css">
 </head>
 <body>
-    <h1> Hello World!</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#recipe">Recipes</a></li>
+        </ul>
+    </nav>
+
+
+<div class="head-one"> 
+<h1> BUDALK CARBONARA RAMEN </h1>
+<div class="paragraph"> Another simple meal is packaged ramen, my favorite ever is Budalk Ramen! Here's my classic recipe to make it into perfection </div>
+<div class="help-me"> 
+    <h1> DIRECTIONS  </h1>
+    <div class="paragraph-two"> First, follow the instructions on the ramen packet. Please cook with a pan and stove lide. Once the noodles are fully cooked, you want to take out the water and replace it with milk. </div>
+    
+    <div class="paragraph-two"> During the same time, soft boil the eggs. That would consist of boiling a pot of water and placing the eggs in there for seven minutes. </div>
+    
+    <div class="paragraph-two"> After you  mixed the sauce packets into the ramen, you would want to add cheese and scallions on top and let it cook for a minute more with the lid on.  </div>
+    
+    <div class="paragraph two"> Put on a plate, garnish with a more scallions and enjoy!</div>
+    </div>
+</div>
+
+<div class="slideshow-container">
+    <div class="slide fade">
+        <img src="imgs/ramen.webp" alt="Image 1">
+    </div>
+    <div class="caption"> Budalk Carbonara Ramen </div>
+
+    <div class="slide fade">
+        <img src="imgs/milk.webp" alt="Image 2">
+    </div>
+    <div class="caption"> Five Tablespoons of Milk </div>
+
+    <div class="slide fade">
+        <img src="imgs/egg.webp" alt="Image 3">
+    </div>
+    <div class="caption"> Two Eggs </div>
+
+    <div class="slide fade">
+        <img src="imgs/grunions.webp" alt="Image 2">
+    </div>
+    <div class="caption"> One handful of Green Onions </div>
+
+    <div class="slide fade">
+        <img src="imgs/cheese.webp" alt="Image 3">
+    </div>
+    <div class="caption">Half a cup of Cheese of your choice </div>
+
+    <a class="prev" onclick="changeSlide(-1)"></a>
+    <a class="next" onclick="changeSlide(1)"></a>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
