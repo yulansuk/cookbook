@@ -1,0 +1,206 @@
+body {
+    margin: 50px; 
+    padding-top: 350px;
+    padding-bottom: 300px;
+    display: flex;
+    background-image: url(imgs/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px 2000px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+  }
+  
+  .navbar {
+    background-color: #ffffff;
+    padding: 10px 20px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 10; 
+}
+
+.navbar ul {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-around; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.navbar li {
+    display: inline; 
+}
+
+.navbar a {
+    font-family: "gambado-sans-forte", sans-serif;
+    text-decoration: none; 
+    color: rgb(232, 185, 227); 
+    font-size: 18px; 
+    padding: 10px; 
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 5px; 
+}
+
+  #confettiButton {
+    font-family: "gambado-sans-forte", sans-serif;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(232, 185, 227);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #confettiContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  /* Confetti styles */
+  .confetti {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  /* Falling animation */
+  @keyframes fall {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100vh);
+    }
+  }
+
+  /* Background images for confetti types */
+  .confetti.star {
+    background-image: url('imgs/totinos.png');
+  }
+  
+  .confetti.heart {
+    background-image: url('imgs/totinos.png');
+  }
+  
+  .confetti.flower {
+    background-image: url('imgs/totinos.png');
+  }
+
+.Header { 
+    color: rgb(255, 255, 255);
+    font-family: "gambado-sans-forte", sans-serif;
+    font-size: 60pt;
+    padding-top: 40px;
+    display: flex; 
+    align-content: center;
+    justify-content: center;
+
+}
+
+.Header6 {
+
+    color: rgb(255, 255, 255);
+    font-family: "gambado-sans-forte", sans-serif;
+    font-size: 30pt;
+    padding-top: 40px;
+    display: flex; 
+    align-content: center;
+    justify-content: center;
+
+ }
+
+.hello { 
+    padding-top: 100px; 
+}
+
+.Header2 { 
+    color: #ffffff;
+    font-family: "rooney-sans", sans-serif;
+    padding-top: 40px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 500px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Header3 { 
+    color: #ffffff;
+    font-family: "gambado-sans-forte", sans-serif;
+    padding-top: 30px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 500px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+@media (max-width: 768px) {
+    body {
+      padding-top: 200px;
+      padding-bottom: 150px;
+      background-size: cover;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar a {
+      font-size: 16px;
+      padding: 8px;
+    }
+  
+    #confettiButton {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    .Header {
+      font-size: 40pt;
+      text-align: center;
+      padding-top: 20px;
+    }
+  
+    .Header6 {
+      font-size: 20pt;
+      padding-top: 20px;
+    }
+  
+    .Header2 {
+      font-size: 16px;
+      width: 90%;
+      padding-top: 20px;
+    }
+  
+    .Header3 {
+      font-size: 20px;
+      width: 90%;
+      padding-top: 15px;
+    }
+  }
