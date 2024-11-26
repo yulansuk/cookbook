@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chocolate Cookie</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/dkf1aqs.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confetti with Images in HTML</title>
+  <link rel="stylesheet" href="https://use.typekit.net/dkf1aqs.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="background-1">
-    <!-- Row for the text content (thing and header-2) -->
-    <div class="text-row">
-        <div class="thing"> 
-          CHOCOLATE CHIP COOKIE! 
-        </div> 
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#recipe">Recipes</a></li>
+        </ul>
+    </nav>
 
-        <div class="header-2"> 
-          We're finally at the end of the entries, the last recipe I have for you is out of simplicity since I have ran out of things that I cook. I thought I would've had made more food, but I've found myself eating take out and microwavable food because I have no time to make an actual meal.
-        </div>
-    </div>
+  <button id="confettiButton">Click for Totinos!</button>
 
-    <!-- Button on a separate row -->
-    <div class="button-container">
-        <button id="changeBackgroundButton">Eat Me!</button>
-    </div>
+  <div class="Header">
+    LOADED TOTINOS
+  </div>
 
-    <script src="script.js"></script>
+  <div class="Header2">
+    Coming to an end to my entries, we have my most indulgent meal! Totino's have always been a childhood staple, even in a Korean household. I would always add some extra ingredients to make it more palatable, here's how I would make my loaded Totinos!  
+  </div>
+
+<div class="hello"> 
+
+<div class="Header6"> 
+    SO HOW DO <br> YOU MAKE IT  
+</div>
+
+  <div class="Header3">
+    Totinos <br> Shredded Parmesan <br> Cilantro <br> Mozzerella <br> 
+  </div>
+
+  <div class="Header2"> 
+    You cook your totinos, and then you add all of the gunk on top.. That's it. It's the perfect meal to make when you feel like you're failing as a designer and you feel like you can't do anything. I mean.. what can you do except make an indulgent dish. Actually work on your design practice?? I feel like I'm going in circles! 
+
+</div>
+
+
+  <div id="confettiTemplates" style="display: none;">
+    <div class="confetti star"></div>
+    <div class="confetti heart"></div>
+    <div class="confetti flower"></div>
+  </div>
+
+
+  <div id="confettiContainer"></div>
+
+
+
+  <script src="script.js"></script>
 </body>
 </html>
