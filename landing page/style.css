@@ -1,0 +1,91 @@
+body {
+    font-family: "ivystyle-sans", sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 100px;
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+
+    cursor: url('imgs/trauma.png'), auto;
+}
+
+.header {
+    width: 100%; /* Full width for better alignment */
+    text-align: left; /* Center content inside the header */
+    padding: 20px;
+}
+
+.header img {
+    width: 500px; /* Smaller scale for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.header p {
+    font-size: 25px;
+    padding-left: 33px;
+    font-weight: medium;
+    color: #ff7d32;
+    margin: 0;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure equal column widths */
+    gap: 30px; /* Space between grid items */
+    padding: 30px;
+    max-width: 80%; /* Center within page */
+    margin: 0 auto; /* Center horizontally */
+    justify-content: center; /* Center items in the grid */
+}
+
+
+.image-container img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #ff7d32;
+    background-color: #d5d5d5; /* Background color inside the image border */
+}
+
+.image-container a {
+    text-decoration: none; /* Remove underline */
+}
+
+.image-container a:hover img {
+    transform: scale(1.05); /* Slightly enlarge the image when hovered */
+    transition: transform 0.3s ease;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    gap: 10px;
+}
+
+.image-container p {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #ff7d32;
+    margin: 0;
+    text-align: left; /* Ensure the text is left aligned */
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border: 2px solid #ff7d32;
+    border-radius: 15px;
+    width: auto; /* Allow the label to fit its content */
+}
+
+.separator {
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background-color: #ff7d32; 
+    margin: 50px 0;
+
+} 
