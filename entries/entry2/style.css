@@ -12,6 +12,40 @@ body {
     
 } 
 
+.navbar {
+    background-color: rgb(255, 255, 255); 
+    padding: 10px 20px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 10; 
+}
+
+.navbar ul {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-around; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.navbar li {
+    display: inline; 
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: #ffa38c; 
+    font-size: 18px; 
+    padding: 10px; 
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 5px; 
+}
+
 @font-face {
     font-family: myFirstfont;
     src: url(PPNeueWorld_SemiCondensedUltraBold.woff);

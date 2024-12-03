@@ -6,8 +6,43 @@
 
 body {
     background-color: #ffffff;
-    
+    padding: 100px
 } 
+
+.navbar {
+    background-color: cornflowerblue; 
+    padding: 10px 20px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 10; 
+}
+
+.navbar ul {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-around; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.navbar li {
+    display: inline; 
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: #ffffff; 
+    font-family: "Montserrat Alternates"; 
+    font-size: 18px; 
+    padding: 10px; 
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 5px; 
+}
 
 h1 { 
     margin: 20px auto; 
