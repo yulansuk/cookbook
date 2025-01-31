@@ -177,34 +177,17 @@ h1 {
     width: 300px; 
 }
 
-.element-with-margins {
-    position: relative;  
-    margin: 50px;
-    padding: 20px;
-    overflow: visible;
-  }
-  
-  .element-with-margins::before,
-  .element-with-margins::after {
-    content: "";
-    position: absolute;
-    background-image: url('imgs/background2.png'); 
-    background-size: contain;  
-    background-repeat: no-repeat;
-    height: 100%; 
-  }
-  
-  .element-with-margins::before {
-    left: -50px; 
-    top: 0;
-    width: 50px;  
-  }
-  
-  .element-with-margins::after {
-    right: -50px; 
-    top: 0;
-    width: 50px; 
-  }
+
+div#holiday-ornament {
+  background: url("imgs/background2.png") no-repeat;
+  width: 160px; /*set the width and height to the width and height of the image */
+  height: 250px;
+  text-indent: -9999px; /* Move the text inside of the div off screen. Still readable for text-readers for the blind */
+
+  position: absolute;
+  left: 5%; /* Play around with the left attribute until it's placed where you want it */
+  top: -25px; /*Your site has a strange top margin to its body element. Changing the top to a negative value compensates for it */
+}
 
 
 @media (max-width: 768px) {
